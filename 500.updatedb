@@ -1,7 +1,7 @@
 #
 export LC_ALL=C
 
-batt > /dev/null && rc=0 || rc=3
+/usr/local/bin/batt > /dev/null && rc=0 || rc=3
 
 if [ $rc = 0 ]; then
    /usr/local/bin/updatedb && rc=0 || rc=3
